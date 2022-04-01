@@ -1,0 +1,126 @@
+@import "./config/fonts";
+@import "./config/reset";
+@import "./config/variables";
+@import "./config/global";
+
+
+// ⚠️ Styles
+.content {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    font-size: var(--step-0);
+}
+
+.navbar {
+    padding: 40px;
+    color: #fff;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-size: var(--step-1);
+    }
+
+    &__content {
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: -100%;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        user-select: none;
+        background-color: rgb(36, 36, 36);
+        padding: 0 50px;
+    }
+
+    .bg-text {
+        position: absolute;
+        content: 'Menu';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: var(--step-l0);
+        line-height: 1.1;
+        color: rgba(255, 255, 255, 0.1);
+        z-index: -1;
+        opacity: 0;
+        margin-top: -10px;
+
+        @media (min-width: 992px) {
+            left: 0;
+            transform: translate(0%, -50%);
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__column:nth-of-type(3) {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__menu {
+        display: grid;
+        gap: 30px;
+
+        li {
+            opacity: 0;
+            margin-top: -20px;
+        }
+
+        a {
+            transition: all 0.3s;
+            position: relative;
+            font-size: var(--step-5);
+            line-height: 1.1;
+
+            &:is(:hover, :focus) {
+                color: rgb(68, 68, 68);
+            }
+
+            &::after {
+                position: absolute;
+                content: attr(data-number);
+                font-size: var(--step-2);
+                transform: translate(10px, 10px);
+
+            }
+        }
+    }
+
+    &-info {
+        display: grid;
+        gap: 30px;
+
+        li {
+            display: grid;
+            gap: 10px;
+        }
+
+        h3 {
+            font-size: var(--step-5);
+            line-height: 1.1;
+            color: rgb(133, 120, 104);
+            font-weight: 700;
+        }
+    }
+}
+

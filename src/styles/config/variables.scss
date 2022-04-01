@@ -1,0 +1,18 @@
+:root {
+    --base-font-size: 16px;
+    --base-line-height: 24px;
+    --base-font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+    --step--2: clamp(0.76rem, calc(0.67rem + 0.13vw), 0.69rem);
+    --step--1: clamp(0.95rem, calc(0.79rem + 0.23vw), 0.83rem);
+    --step-0: clamp(1.00rem, calc(0.93rem + 0.37vw), 1.19rem);
+    --step-1: clamp(1.20rem, calc(1.09rem + 0.55vw), 1.48rem);
+    --step-2: clamp(1.44rem, calc(1.28rem + 0.81vw), 1.86rem);
+    --step-3: clamp(1.73rem, calc(1.50rem + 1.15vw), 2.32rem);
+    --step-4: clamp(2.07rem, calc(1.75rem + 1.61vw), 2.90rem);
+    --step-5: clamp(2.49rem, calc(2.04rem + 2.22vw), 3.62rem);
+
+    --step-l0: clamp(12.50rem, calc(10.06rem + 12.20vw), 18.75rem);
+}
