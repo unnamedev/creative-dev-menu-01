@@ -9,7 +9,7 @@
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background-color: rgb(12, 12, 12);
+    background-color: var(--black);
     font-size: var(--step-0);
 }
 
@@ -17,16 +17,19 @@
     padding: 40px;
     color: #fff;
 
+    /* Wrapper */
     &__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
+    /* Logo */
     &__logo {
         font-size: var(--step-1);
     }
 
+    /* Main content */
     &__content {
         position: fixed;
         width: 100%;
@@ -40,10 +43,11 @@
         opacity: 0;
         visibility: hidden;
         user-select: none;
-        background-color: rgb(36, 36, 36);
+        background-color: var(--dark);
         padding: 0 50px;
     }
 
+    /* Background Text */
     .bg-text {
         position: absolute;
         content: 'Menu';
@@ -63,12 +67,14 @@
         }
     }
 
+    /* Close */
     &__close {
         position: absolute;
         top: 20px;
         right: 20px;
     }
 
+    /* Column */
     &__column:nth-of-type(3) {
         display: none;
 
@@ -77,6 +83,7 @@
         }
     }
 
+    /* Menu */
     &__menu {
         display: grid;
         gap: 30px;
@@ -93,7 +100,7 @@
             line-height: 1.1;
 
             &:is(:hover, :focus) {
-                color: rgb(68, 68, 68);
+                color: var(--dark-hover);
             }
 
             &::after {
@@ -106,6 +113,7 @@
         }
     }
 
+    /* Info */
     &-info {
         display: grid;
         gap: 30px;
@@ -118,7 +126,7 @@
         h3 {
             font-size: var(--step-5);
             line-height: 1.1;
-            color: rgb(133, 120, 104);
+            color: var(--brown);
             font-weight: 700;
         }
     }

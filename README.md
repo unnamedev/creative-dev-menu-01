@@ -1,21 +1,13 @@
-    ✨ YOUR_APP_NAME
+    ✨ Creative Menu Ep.01
 ---
-![YOUR_APP_NAME](assets/images/preview.png)
-
-### ✨ About:
-
-YOUR_APP_DESCRIPTION
+### ✨ Preview:
+![Creative Menu Ep.01](assets/images/preview.png)
 
 ---
 
 ### ✨ Stack:
 
 - [React](https://ru.reactjs.org/) 💡
-- [Redux](https://redux.js.org/) 💡
-- [Redux Toolkit](https://redux-toolkit.js.org/) 💡
-- [React Router](https://reactrouter.com/docs/en/v6/getting-started/overview) 💡
-- [React Hook Form](https://react-hook-form.com/) 💡
-- [Axios](https://axios-http.com/docs/intro) 💡
+- [GSAP](https://greensock.com/gsap/) 💡
 - [React Icons](https://react-icons.github.io/react-icons/) 💡
-- [Tailwind CSS](https://tailwindcss.com/) 💡
 - [Sass](https://sass-lang.com/) 💡
